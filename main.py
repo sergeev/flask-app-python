@@ -1,6 +1,8 @@
-# Файл обработки запросов в приложении
+#coding=utf-8
 from app import app
-from config import Global_app_config
+#Подключаем конфигурационный файл
+from settings import Global_app_config
+import views
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
